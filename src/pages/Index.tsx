@@ -84,28 +84,19 @@ const Index = () => {
       <section id="about" className="py-20 px-6 bg-white/50">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h3 className="text-4xl font-bold text-gray-800 mb-12 text-center">Обо мне</h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 transition-transform hover:scale-105">
               <Icon name="BookOpen" size={40} className="text-primary mb-4" />
               <h4 className="text-xl font-semibold mb-3">Образование</h4>
               <p className="text-gray-600 leading-relaxed">
-                Высшее педагогическое образование по специальности "Педагогика и методика
-                начального образования"
-              </p>
-            </Card>
-            <Card className="p-6 transition-transform hover:scale-105">
-              <Icon name="Award" size={40} className="text-primary mb-4" />
-              <h4 className="text-xl font-semibold mb-3">Квалификация</h4>
-              <p className="text-gray-600 leading-relaxed">
-                Первая квалификационная категория, регулярное повышение квалификации и участие в
-                профессиональных конкурсах
+                Среднее профессиональное образование учителя начальных классов
               </p>
             </Card>
             <Card className="p-6 transition-transform hover:scale-105">
               <Icon name="Users" size={40} className="text-primary mb-4" />
               <h4 className="text-xl font-semibold mb-3">Опыт работы</h4>
               <p className="text-gray-600 leading-relaxed">
-                Более 8 лет работы с детьми младшего школьного возраста, индивидуальный подход к
+                2 года работы с детьми младшего школьного возраста, индивидуальный подход к
                 каждому ученику
               </p>
             </Card>
@@ -124,37 +115,17 @@ const Index = () => {
       <section id="achievements" className="py-20 px-6">
         <div className="max-w-6xl mx-auto animate-fade-in">
           <h3 className="text-4xl font-bold text-gray-800 mb-12 text-center">Достижения</h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {[
               {
-                icon: 'Trophy',
-                title: 'Победитель конкурса',
-                description: '"Учитель года" районного этапа 2023'
-              },
-              {
-                icon: 'Star',
-                title: 'Благодарность',
-                description: 'От Департамента образования за вклад в развитие образования'
-              },
-              {
                 icon: 'Award',
-                title: 'Призёры олимпиад',
-                description: '15 учеников стали призёрами городских олимпиад'
+                title: 'Сертификат вожатого',
+                description: 'Прохождение обучения по профессии "Вожатый"'
               },
               {
-                icon: 'BookCheck',
-                title: 'Авторская методика',
-                description: 'Разработка инновационной программы по литературному чтению'
-              },
-              {
-                icon: 'Medal',
-                title: 'Грамота',
-                description: 'За подготовку участников всероссийских конкурсов'
-              },
-              {
-                icon: 'Sparkles',
-                title: 'Проектная работа',
-                description: 'Реализация 20+ образовательных проектов с учениками'
+                icon: 'GraduationCap',
+                title: 'Проф. переподготовка',
+                description: 'По специальности "Коррекционная педагогика"'
               }
             ].map((achievement, index) => (
               <Card key={index} className="p-6 text-center transition-transform hover:scale-105">
@@ -224,7 +195,7 @@ const Index = () => {
                   <Icon name="Mail" size={24} className="text-primary mt-1" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-600">kurganskaya.teacher@school.ru</p>
+                    <p className="text-gray-600">kurganskaya99@internet.ru</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
