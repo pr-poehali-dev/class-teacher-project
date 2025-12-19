@@ -56,9 +56,11 @@ const Index = () => {
       <section id="home" className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto text-center animate-fade-in">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-purple-400 rounded-full flex items-center justify-center shadow-lg">
-              <Icon name="GraduationCap" size={64} className="text-white" />
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/IMG_6885.jpeg" 
+              alt="Курганская Софья Алексеевна" 
+              className="w-48 h-48 mx-auto rounded-full object-cover shadow-xl ring-4 ring-primary/20"
+            />
           </div>
           <h2 className="text-5xl font-bold text-gray-800 mb-4">
             Курганская Софья Алексеевна
@@ -171,13 +173,26 @@ const Index = () => {
         <div className="max-w-6xl mx-auto animate-fade-in">
           <h3 className="text-4xl font-bold text-gray-800 mb-12 text-center">Галерея</h3>
           <div className="grid md:grid-cols-3 gap-6">
+            <Card className="overflow-hidden transition-transform hover:scale-105 cursor-pointer group">
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/IMG_6869.jpeg" 
+                  alt="Творческая работа ученика" 
+                  className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+              </div>
+              <div className="p-4">
+                <span className="text-xs text-primary font-medium">Творчество</span>
+                <h4 className="text-lg font-semibold mt-1">Лепка из пластилина</h4>
+              </div>
+            </Card>
             {[
               { title: 'День знаний', category: 'Мероприятия' },
               { title: 'Открытый урок', category: 'Обучение' },
               { title: 'Конкурс чтецов', category: 'Конкурсы' },
               { title: 'Проектная работа', category: 'Проекты' },
-              { title: 'Экскурсия в музей', category: 'Мероприятия' },
-              { title: 'Творческие работы', category: 'Творчество' }
+              { title: 'Экскурсия в музей', category: 'Мероприятия' }
             ].map((item, index) => (
               <Card key={index} className="overflow-hidden transition-transform hover:scale-105 cursor-pointer group">
                 <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-purple-200 flex items-center justify-center relative">
